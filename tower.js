@@ -28,16 +28,17 @@ function moveDisk(evt){
     
     if( gameMode === "pickup"){
     holder.appendChild(currentTower.lastElementChild)
+    
     gameMode = "drop";
     }else if(gameMode === "drop"){
         if( !currentTower.childElementCount ){
             currentTower.appendChild(holder.lastElementChild);
+            
             gameMode="pickup";
             
-        }else if(currentTower.lastElementChild.attributes.width.value > holder.lastElementChild.attributes.width.value){
+        }else if(Number(currentTower.lastElementChild.attributes.width.value) > Number(holder.lastElementChild.attributes.width.value)){
             currentTower.appendChild(holder.lastElementChild)
-            console.log(currentTower.lastElementChild.attributes.width.value)
-            console.log(holder.lastElementChild.attributes.width.value)
+            
 
             gameMode="pickup";
         }else{
@@ -50,9 +51,9 @@ function moveDisk(evt){
 
 
 };
-startTower.addEventListener('dblclick', moveDisk)
-midTower.addEventListener('dblclick', moveDisk)
-endTower.addEventListener('dblclick', moveDisk)
+startTower.addEventListener('click', moveDisk)
+midTower.addEventListener('click', moveDisk)
+endTower.addEventListener('click', moveDisk)
 
 
 

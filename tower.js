@@ -11,6 +11,7 @@
             //compare widths of disks
                 //window-prompt alert to notify that the disk is larger than the disk of the destination tower
 //see if you won
+//
 
 let gameMode = "pickup";
 

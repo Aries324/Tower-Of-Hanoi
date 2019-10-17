@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Poppins&display=swap');
 :root {
     box-sizing: border-box;
 }
 body{
     background-color: lightblue;
+}
+h1, h3{
+    font-family: 'Merriweather', serif;
+}
+h1{
+    font-size: 40px;
+}
+li{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    text-decoration: none;
 }
 .gameWrapper{
     width: 1000px;
@@ -11,11 +24,12 @@ body{
     border-radius: 15px;
     display:flex;
     position: relative;
-    align-items: center
+    
 }
 #towerWrapper{
     display: flex;
     position: relative;
+    align-items: center;
     
 }
 .tower{

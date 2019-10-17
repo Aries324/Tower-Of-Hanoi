@@ -1,0 +1,55 @@
+:root {
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+.gameWrapper{
+    width: 1000px;
+    height:600px;
+    background-color: rgb(250, 219, 229);;
+    border-radius: 15px;
+    display:flex;
+    position: relative;
+}
+#towerWrapper{
+    display: flex;
+    position: relative;
+    
+}
+.tower{
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+    height: 240px;
+    width: 40px;
+    margin: 100px;
+    background-color: black;
+   
+}
+
+.disk{
+    height: 40px;
+    border-radius: 15px;
+    justify-content: flex-end;
+    
+}
+#disk1{
+    background-color: blue;
+    width: 75px
+}
+#disk2{
+    background-color: purple;
+    width: 100px
+
+}
+#disk3{
+    background-color:green;
+    width: 130px
+
+}
+#disk4{
+    background-color: red;
+    width: 170px
+
+}
